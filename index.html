@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker Academy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('ImageFolder/wp1828920-programmer-wallpapers.jpg');
+            background-size: 1340px 1000px;
+            /* background-image-height : */
+        }
+
+        .header {
+            margin: 0px;
+            display: flex;
+            width: 98vw;
+            height: 80px;
+            flex-direction: row;
+            /* border: 2px red solid; */
+            align-items: center;
+            justify-content: space-between;
+            position: sticky;
+            top: 0px;
+            /* background-color: black; */
+            z-index: 40;
+
+        }
+
+        .header::before {
+            content: " ";
+            background-color: black;
+            position: absolute;
+            opacity: 0.3;
+            width: 100vw;
+            height: 80px;
+            z-index: -1;
+        }
+
+        .img {
+            margin-right: 40px;
+            height: 60px;
+            width: 60px;
+
+        }
+
+        .headeritem {
+            /* border : red 2px solid; */
+        }
+
+        .nav {
+            /* border: black 2px solid; */
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 10px;
+            padding: 15px;
+        }
+
+        .nav:hover {
+            cursor: pointer;
+            border: black 2px solid;
+            border-radius: 15px;
+            background-color: white;
+            padding: 15px;
+            color: black;
+        }
+
+        #left {
+            margin-left: 80px;
+
+        }
+
+        .name {
+            position: relative;
+            top: 10px;
+            left: 70px;
+            /* left:100px; */
+            right: 5px;
+            color: white;
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            display: block;
+            width: 60px;
+
+        }
+
+        #right {
+            margin-right: 20px;
+        }
+
+        .button {
+            width: 93px;
+            height: 37px;
+            background-color:
+
+                black;
+
+            color:
+                darkred;
+
+            font-weight: bolder;
+
+            font-size: larger;
+
+            border-radius: 10px;
+        }
+
+        .button:hover {
+
+            background-color:
+
+                orange;
+            cursor: pointer;
+
+        }
+
+        .middleContent {
+            margin-top: 50px;
+
+            /* border:2px red solid; */
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            width: 100vw;
+            height: 500px;
+
+            align-items: center;
+
+        }
+
+        .middleContent1 {
+            z-index: 10;
+            position: relative;
+            right: 50px;
+            /* border:2px red solid; */
+            width: 400px;
+            /* height :500px; */
+            border: 5px solid white;
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            transition: all 5s;
+        }
+
+        .middleContent1:hover {
+            cursor: pointer;
+            /* background-color : rgb(77, 79, 204); */
+            color: white;
+            border: darkred 5px solid;
+
+        }
+
+        .input {
+            /* style:none ; */
+
+            margin-top: 20px;
+            font-family: 'Lobster , cursive';
+
+            background-color:
+                black;
+            border-style: none;
+            /* border-bottom-style: none; */
+            border-bottom: 4px solid white;
+            display : block;
+            margin : auto;
+            align-self: center;
+
+            font-size: medium;
+            width: auto;
+            margin-top : 20px;
+            padding :10px;
+            color : White;
+        }
+
+        #password {
+            margin-bottom: 20px;
+        }
+
+        #submit {
+            margin-top: 20px;
+            margin-left: 130px;
+            width: 140px;
+            display: block;
+            /* margin : auto; */
+            /* transition: all 4s; */
+            border: color;
+        }
+
+        #submit:hover {
+
+        /* transform: scale(1); */
+            /* transform: rotate(360deg); */
+            /* z-index : -1; */
+        }
+
+        #right {
+            display: none;
+        }
+
+        .input1 {
+            width: 250px;
+
+            padding: 0px 40px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 800px;
+
+            background-image: url("ImageFolder/python3.jpg");
+            /* background-size: 1340px 800px; */
+        }
+        @media(max-width: 920px){
+            .headeritem{
+                display:none;
+            }
+
+        }
+        @media(min-width: 921px){
+            .heamburger{
+                display:none;
+            }
+
+        }
+        .nevIcon{
+            display : none;
+            justify-content: center;
+            float: center;
+            position : absolute;
+            top : 100px;
+            right : 20vw;
+            z-index: 23;
+            background-color: brown;
+
+        }
+        .columnContainer{
+            display : flex;
+            /* width : 30vh ; */
+            flex-direction: column;
+            justify-content: center;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="headeritem1" id="left">
+            <img src="ImageFolder/hackerlogo.jpg" alt="Hacker Logo" class="img">
+
+
+        </div>
+
+        <div class="headeritem" id="center">
+            <a href="" class="nav" id="nav1">Home</a>
+            <a href="" class="nav" id="nav2">Courses</a>
+            <a href="" class="nav" id="nav3">Aluminai</a>
+            <a href="" class="nav" id="nav4">About us</a>
+
+        </div>
+        <div class="headeritem" id="right1">
+            <button class="button" id="button1">Sign In </button>
+            <button class="button" id="button2">Log In</button>
+
+
+        </div>
+        <div class="heamburger" >
+            <button class="button"  id = "hamIcon">Press</button>
+        </div>
+
+    </header>
+    <span class="name">Hacker Academy</span>
+
+    <div class="middleContent">
+        <div class="middleContent1" id="left">
+            <div class="formContainer">
+                <p style="font-size : 20px; font-family: cursive; font-style: italic;">Join the best Academy for hackers
+                    in this entire word</p>
+                <form action="">
+                    <input class="input" class="input1" type="text" placeholder="Enter your name">
+                    <input class="input" class="input1" type="text" placeholder="Enter your number">
+                    <input class="input" class="input1" type="email" placeholder="Enter your email">
+                    <input class="input" class="input1" type="password" placeholder="Enter your password">
+                    <input class=" button" type="submit" value="Enroll now" id="submit">
+                </form>
+            </div>
+        </div>
+        <div id="nevIcon" class="nevIcon">
+            <div class="columnContainer">
+                <a href="" class="nav" id="nav1">Home</a>
+                <a href="" class="nav" id="nav2">Courses</a>
+                <a href="" class="nav" id="nav3">Aluminai</a>
+                <a href="" class="nav" id="nav4">About us</a>
+                <button class="button" id="button1">Sign In </button>
+                <button class="button" id="button2">Log In</button>
+                
+            </div>
+        </div>
+        <div class="middleContent1" id="right">
+            <p>
+            </p>
+        </div>
+    </div>
+    <div class="container"></div>
+    <script>
+        let hamIcon = document.getElementById("hamIcon");
+        hamIcon.addEventListener("click",function(){
+            let navIcon = document.getElementById("nevIcon");
+            if(navIcon.style.display == "none"){
+            navIcon.style.display = "flex";}
+            else{
+                navIcon.style.display = "none";
+            }
+
+        })
+
+
+    </script>
+</body>
+
+</html>
